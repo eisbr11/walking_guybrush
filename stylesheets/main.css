@@ -1,0 +1,42 @@
+.guybrush {
+    height: 152px;
+    width: 104px;
+    margin: 100px auto 0;
+    position: fixed;
+    bottom: 0px;
+}
+
+.stand{
+    background: url(../images/gb_walk.png) 0 0 no-repeat;
+}
+
+
+
+.walk {
+    background: url(../images/gb_walk.png) 0 0 no-repeat;
+    -webkit-animation: walk-right 0.8s steps(6) infinite;
+    animation: walk-right 0.8s steps(6) infinite;
+}
+
+.left {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+@keyframes walk-right {  
+    0% {background-position: 0 0; } 
+    100% {background-position: -510px 0; } 
+}
+
+@-webkit-keyframes walk-right {
+    0% {background-position: 0 0; } 
+    100% {background-position: -622px 0; } 
+}
+
+html {
+    text-align: center;
+}
