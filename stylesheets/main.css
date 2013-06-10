@@ -7,13 +7,12 @@
 }
 
 .stand{
-    background: url(../images/gb_walk.png) 0 0 no-repeat;
+    background: url(../images/gb_stand.png) 0 0 no-repeat;
 }
-
-
 
 .walk {
     background: url(../images/gb_walk.png) 0 0 no-repeat;
+    -moz-animation: walk-right 0.8s steps(6) infinite;
     -webkit-animation: walk-right 0.8s steps(6) infinite;
     animation: walk-right 0.8s steps(6) infinite;
 }
